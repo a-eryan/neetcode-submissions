@@ -8,7 +8,7 @@ class Solution {
         let complement; 
         let hashmap = {};
 
-        for (let i = 0; i < nums.length; i++) { //two-pass hashmap
+        for (let i = 0; i < nums.length; i++) { //one-pass hashmap
             complement = target - nums[i];
             //does this complement exist within the hashmap?
             //EDGE CASE: nums[i] == complement

@@ -9,14 +9,12 @@ class Solution {
 
         let backwardArray = new Array(s.length);
 
-        console.log(s)
         for (let i = 0; i < s.length; i++) {
             backwardArray[s.length - 1 - i] = s[i];
         }
 
         let backwardString = backwardArray.join('').replace(/\s/g, '')
 
-        console.log(backwardString);
 
         if (s === backwardString) {
             return true
